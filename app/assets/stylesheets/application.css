@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ .viewing-party-banner {
+  text-align: center; /* Center text horizontally */
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed position */
+  top: 0; /* At the top of the page */
+  left: 0;
+  background-color: #f8f9fa; /* Background color */
+  padding: 10px 0; /* Some padding */
+  z-index: 1000; /* Make sure it's above other content */
+  /* Add other styles as needed */
+}
