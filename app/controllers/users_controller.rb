@@ -2,6 +2,11 @@ class UsersController < ApplicationController
   def new
   end
   
+  def discover
+    # require 'pry';binding.pry
+    @user = User.find(params[:user_id])
+  end
+
   def create
     user = User.new(user_params)
 
