@@ -1,2 +1,7 @@
-<h1><%= @user.name %>'s Dashboard</h1>
+<section id="page-title">
+  <h1><%= @user.name %>'s Dashboard</h1>
+</section>
 <%= button_to "Discover Movies", user_discover_path(@user), method: :get, data: { turbo: false }, local: true %>
+<div id="viewing-parties">
+
+</div>
