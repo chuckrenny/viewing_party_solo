@@ -219,8 +219,8 @@
         "lines": [
           1,
           1,
-          13,
-          13,
+          3,
+          3,
           null,
           null
         ]
@@ -250,137 +250,6 @@
           null
         ]
       },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/spec/features/users/new_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          4,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/spec/features/welcome_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          4,
-          4,
-          4,
-          4,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/spec/models/user_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/app/models/user.rb": {
         "lines": [
           1,
@@ -399,63 +268,6 @@
           null
         ]
       },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/spec/models/user_viewing_party_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/app/models/users_viewing_party.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/spec/models/viewing_party_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/app/models/viewing_party.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/app/controllers/users_controller.rb": {
         "lines": [
           1,
@@ -464,17 +276,17 @@
           null,
           1,
           null,
-          5,
+          1,
           null,
           null,
           1,
-          4,
+          0,
           null,
-          4,
-          1,
+          0,
+          0,
           null,
-          3,
-          3,
+          0,
+          0,
           null,
           null,
           null,
@@ -485,7 +297,7 @@
           1,
           null,
           1,
-          4,
+          0,
           null,
           null
         ]
@@ -502,17 +314,8 @@
           null,
           null
         ]
-      },
-      "/Users/charlesren/turing_work/3mod/projects/solo_viewing_party/app/controllers/welcome_controller.rb": {
-        "lines": [
-          1,
-          1,
-          4,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1701573171
+    "timestamp": 1701581014
   }
 }
