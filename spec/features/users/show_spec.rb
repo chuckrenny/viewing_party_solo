@@ -1,10 +1,12 @@
 require "rails_helper"
 
 RSpec.describe "the /users/:id page", type: :feature do
-  # As a user,
-  # When I go to a user dashbaord,
-  # and click "Discover Movies" button,
-  # I am redirected to a discover page /users/:id/discover, where :id is the user id of the user who's dashboard I was just on.
+  #  When I visit '/users/:id' where :id is a valid user id,
+  #  I should see:
+
+  #  "<user's name>'s Dashboard" at the top of the page
+  #  A button to Discover Movies*
+  #  A section that lists viewing parties**
   before do
     @user = create(:user)
     visit user_path(@user)
