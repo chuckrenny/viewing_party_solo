@@ -1,16 +1,20 @@
 class MovieService
   def conn
-    Faraday.new(url: "https://api.themoviedb.org/") do |faraday|
-      faraday.params['api_key'] = Rails.application.credentials.tmdb[:key]
-    end 
+    Faraday.new(url: 'https://api.themoviedb.org/') do |f|
+      f.params['api_key'] = Rails.application.credentials.tmdb[:key]
+    end
   end
 
   def get_url(url)
     response = conn.get(url)
-    JSON.parse(response.body, symbolize_names: true) 
+    JSON.parse(response.body, symbolize_names: true)
   end
 
-  # def members_by_state(state)
-  #   get_url("/congress/v1/members/house/#{state}/current.json") # specific endpoint
-  # end
+  def search_movies(query)
+    get_url("3/search/movie?query=#{query}&include_adult=false&language=en-US&page=1")
+  end
+
+  def top_rated_movies
+    get_url('3/movie/top_rated?language=en-US&page=1') # specific endpoint
+  end
 end

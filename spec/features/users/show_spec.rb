@@ -1,6 +1,6 @@
-require "rails_helper"
+require 'rails_helper'
 
-RSpec.describe "the /users/:id page", type: :feature do
+RSpec.describe 'the /users/:id page', type: :feature do
   #  When I visit '/users/:id' where :id is a valid user id,
   #  I should see:
 
@@ -23,7 +23,7 @@ RSpec.describe "the /users/:id page", type: :feature do
       expect(page).to have_button('Discover Movies')
       click_button('Discover Movies')
       expect(current_path).to eq(user_discover_path(@user))
-      expect(page).to have_content("Discover Movies")
+      expect(page).to have_content('Discover Movies')
     end
   end
 end

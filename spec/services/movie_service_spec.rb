@@ -7,10 +7,10 @@ RSpec.describe MovieService do
 
   context "class methods" do
     context "#get_url", :vcr do
-      it "returns parsed json data" do
+      it "connects endpoints to the base api url" do
         @service = MovieService.new
         results = @service.get_url('3/movie/238?language=en-US')
-
+# require 'pry';binding.pry
         expect(results).to be_a Hash
         expect(results[:genres]).to be_an Array
         expect(results[:id]).to be_an Integer
