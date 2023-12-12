@@ -23,6 +23,22 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def login_form; end
+
+  def login_user
+    # require 'pry';binding.pry
+    user = User.find_by(email: params[:email])
+
+    # provided to us from has_secure_password on user models
+    if user.authenticate(params[:password])
+      flash[:success] = "Welcome, #{user.name}"
+      redirect_to user_path(user)
+    else
+      flash[:error] = 'Sorry, wrong password'
+      render :login_form
+    end
+  end
+
   private
 
   def user_params
