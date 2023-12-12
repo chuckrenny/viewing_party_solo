@@ -1,11 +1,15 @@
 <h1>Register a New User</h1>
 <br>
-<section id="registration=form">
-  <%= form_with model: User.new, data: {turbo: false} do |form| %>
+<section id="registration-form">
+  <%= form_with model: @user, data: { turbo: false } do |form| %>
     <%= form.label :name %><br>
     <%= form.text_field :name %><br>
     <%= form.label :email %><br>
     <%= form.text_field :email %><br>
-    <%= form.submit "Register" %>
+    <%= form.label :password %><br>
+    <%= form.password_field :password %>
+    <%= form.label :password_confirmation %><br>
+    <%= form.password_field :password_confirmation %>
+    <%= form.submit 'Register' %>
   <% end %>
 </section>
