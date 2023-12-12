@@ -68,5 +68,16 @@ RSpec.describe 'the /register page', type: :feature do
 
       expect(current_path).to eq(user_path(User.all.last))
     end
+
+    it 'fails to register a user if theres an issue with matching passwords fields' do
+      fill_in 'Name', with: 'John Smith'
+      fill_in 'Email', with: 'jsmith@aol.com'
+      fill_in 'user_password', with: 'secure123'
+      fill_in 'user_password_confirmation', with: 'notsecure321'
+      click_on 'Register'
+
+      expect(current_path).to eq(register_path)
+      expect(page).to have_content('Passwords must match')
+    end
   end
 end

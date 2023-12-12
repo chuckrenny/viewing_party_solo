@@ -10,10 +10,11 @@ class UsersController < ApplicationController
   def create
     user = User.new(user_params)
 
-    if user.save
+    if user_params[:password] == user_params[:password_confirmation]
+      user.save
       redirect_to user_path(user), notice: 'User created successfully'
     else
-      flash.now[:alert] = user.errors.full_messages.join(", ")
+      flash.now[:alert] = 'Passwords must match'
       render :new
     end
   end
