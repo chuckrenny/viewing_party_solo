@@ -77,7 +77,7 @@ RSpec.describe 'the /register page', type: :feature do
       click_on 'Register'
 
       expect(current_path).to eq(register_path)
-      expect(page).to have_content('Passwords must match')
+      expect(page).to have_content("Password confirmation doesn't match")
     end
   end
 end
